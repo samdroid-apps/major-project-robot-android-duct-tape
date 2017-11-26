@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="robot.eng.sam.today.robot.RemoteActivity"
+    tools:showIn="@layout/activity_remote">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/powerSeekBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:rotation="270" />
+
+        <SeekBar
+            android:id="@+id/steerSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:text="Reset"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="match_parent"
+        android:text="Record"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/stopRecordingButton"
+        android:layout_width="match_parent"
+        android:text="Stop Recording"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/playRecordingButton"
+        android:layout_width="match_parent"
+        android:text="Play Recording"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/sdapSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Self Assist Driving Pro" />
+
+    <SeekBar
+        android:id="@+id/aimOrientationSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/logTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="112dp" />
+    </ScrollView>
+</LinearLayout>
